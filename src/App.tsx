@@ -1,0 +1,19 @@
+import { Routes, Route } from "react-router-dom";
+import ProducstListPage from "./pages/products list/ProducstListPage";
+import ErrorPage from "./pages/ErrorPage";
+import Layout from "./layouts/Layout";
+
+const App = () => {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+        <Route index element={<ProducstListPage />} />
+        <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
