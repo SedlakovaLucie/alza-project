@@ -1,8 +1,7 @@
+import "./Footer.css";
 
 const Footer = () => {
-  return (
-    <footer>Footer</footer>
-  )
-}
+  return <footer className="footer-wrapper">©{new Date().getFullYear()}</footer>;
+};
 
-export default Footer
+export default Footer;

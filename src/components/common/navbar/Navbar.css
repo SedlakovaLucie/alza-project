@@ -1,0 +1,19 @@
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3);
+}
+
+.nav-logo {
+    width: 70px;
+}
+
+.avatar {
+    width: 50px;
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+}
