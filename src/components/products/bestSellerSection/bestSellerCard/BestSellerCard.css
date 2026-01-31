@@ -1,0 +1,29 @@
+.bestSellerCard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--color-brand);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--fs-3);
+}
+
+.bestSellerCard-imageWrap {
+  width: 200px;
+  height: 200px;
+  background: var(--color-bg);
+  display: flex;
+  justify-content: center;
+}
+
+.bestSellerCard-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bestSellerCard-spec {
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+}

@@ -35,6 +35,6 @@
   --space-10: 4rem; /* 64px */
 
   /* cards */
-  --radius-card: 0.75rem;
+  --radius-card: 1rem;
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.12);
 }

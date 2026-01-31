@@ -1,0 +1,4 @@
+.bestSellerCard-section{
+    display: flex;
+    gap: var(--fs-3);
+}

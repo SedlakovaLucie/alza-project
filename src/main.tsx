@@ -5,7 +5,7 @@ import App from "./App.tsx";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/global.css"
 import "./styles/variables.css"
-import "./i18n";
+import "./services/i18n/index.ts";
 
 
 createRoot(document.getElementById("root")!).render(
