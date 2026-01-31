@@ -1,8 +1,10 @@
 
 const ProducstListPage = () => {
   return (
-    <div>ProducstListPage</div>
-  )
-}
+    <div>
+      ProducstListPage
+    </div>
+  );
+};
 
-export default ProducstListPage
+export default ProducstListPage;
