@@ -1,29 +1,71 @@
 .bestSellerCard {
   display: flex;
   flex-direction: column;
+  height: 100%;
   border: 2px solid var(--color-brand);
   border-radius: var(--radius-card);
-  box-shadow: var(--shadow-card);
   padding: var(--fs-3);
+  gap: 10px;
 }
 
+/* image wrapper */
 .bestSellerCard-imageWrap {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   background: var(--color-bg);
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 8px;
 }
 
+/* image */
 .bestSellerCard-image {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.bestSellerCard-spec {
-    overflow: hidden;
+/* card body */
+.bestSellerCard-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-height: 0;
+}
+
+/* title */
+.bestSellerCard-name {
+  margin: 0;
+  font-size: var(--fs-3);
+  line-height: 1.2;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* rating */
+.bestSellerCard-rating {
+  line-height: 1.2;
+}
+
+/* specifikace */
+.bestSellerCard-spec {
+  margin: 0;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+/* price */
+.bestSellerCard-price {
+  padding-top: 8px;
+  font-weight: var(--fw-bold);
+  color: var(--color-brand);
 }

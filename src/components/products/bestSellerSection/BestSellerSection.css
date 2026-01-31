@@ -1,4 +1,92 @@
-.bestSellerCard-section{
-    display: flex;
-    gap: var(--fs-3);
+.bestSellerCard-section {
+  width: 100%;
+}
+
+.bestSeller__title {
+  margin-bottom: var(--fs-3);
+  margin-left: var(--fs-9);
+}
+
+/* EMBLA library */
+.embla {
+  --slide-spacing: var(--fs-3);
+  --slides-per-view: 4;
+  --slide-size: calc(100% / var(--slides-per-view));
+  --arrow-gap: 50px;
+  position: relative;
+  padding-inline: var(--arrow-gap);
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  margin-left: calc(var(--slide-spacing) * -1);
+  touch-action: pan-y;
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__slide > * {
+  width: 100%;
+}
+
+/* ARROWS */
+.embla__button {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 60px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-brand);
+  color: var(--color-bg);
+  z-index: 2;
+}
+
+.embla__button:hover {
+  filter: brightness(0.95);
+}
+
+.embla__button--prev {
+  left: 0;
+}
+
+.embla__button--next {
+  right: 0;
+}
+
+.embla__button__svg {
+  width: 22px;
+  height: 22px;
+}
+
+.embla__button--next .embla__button__svg {
+  transform: rotate(180deg);
+}
+
+/* breakpoints */
+@media (max-width: 1024px) {
+  .embla {
+    --slides-per-view: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .embla {
+    --slides-per-view: 1;
+    --arrow-gap: 40px;
+  }
 }
