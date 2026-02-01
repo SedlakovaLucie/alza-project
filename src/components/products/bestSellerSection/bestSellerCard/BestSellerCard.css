@@ -37,7 +37,7 @@
 }
 
 /* title */
-.bestSellerCard-name {
+.bestSellerCard-title {
   margin: 0;
   font-size: var(--fs-3);
   overflow: hidden;
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-/* specifikace */
+/* specification */
 .bestSellerCard-spec {
   margin: 0;
   line-height: 1.3;

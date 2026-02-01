@@ -1,14 +1,18 @@
 import BestSellerSection from "../../components/products/bestSellerSection/BestSellerSection";
-import { /* getProducts, */ getBestSellerProducts } from "../../services/api/products";
+import ProductsSection from "../../components/products/productsSection/ProductsSection";
+import {
+  getProducts,
+  getBestSellerProducts,
+} from "../../services/api/products";
 
 const ProductsListPage = () => {
- /*  const products = getProducts();  */
   const bestSellers = getBestSellerProducts();
+  const allProducts = getProducts();
 
   return (
     <div>
-      <BestSellerSection products={bestSellers} />
-      {/* tady pak bude ProductsSection products={products} */}
+      <BestSellerSection bestSellers={bestSellers} />
+      <ProductsSection allProducts={allProducts} />
     </div>
   );
 };

@@ -4,12 +4,12 @@ import type { Product } from "../../../../types";
 import Stars from "../../ui/rating/Stars";
 
 type Props = {
-  product: Product;
+  bestProduct: Product;
 };
 
-const BestSellerCard = ({ product }: Props) => {
+const BestSellerCard = ({ bestProduct }: Props) => {
   const { t } = useTranslation();
-  const { img, name, rating, spec, price } = product;
+  const { img, name, rating, spec, price } = bestProduct;
 
   return (
     <article className="bestSellerCard">
@@ -17,13 +17,12 @@ const BestSellerCard = ({ product }: Props) => {
         <img className="bestSellerCard-image" src={img} alt={name} />
       </div>
       <div className="bestSellerCard-body">
-        <h3 className="bestSellerCard-name" title={name}>
+        <h3 className="bestSellerCard-title" title={name}>
           {name}
         </h3>
         {/* rating */}
         <div className="bestSellerCard-rating">
           <Stars value={rating} />
-          {rating}
         </div>
         <p className="bestSellerCard-spec">{spec}</p>
       </div>

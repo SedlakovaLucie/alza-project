@@ -10,7 +10,7 @@
 /* EMBLA library */
 .embla {
   --slide-spacing: var(--fs-3);
-  --slides-per-view: 4;
+  --slides-per-view: 5;
   --slide-size: calc(100% / var(--slides-per-view));
   --arrow-gap: 50px;
   position: relative;
@@ -80,13 +80,13 @@
 /* breakpoints */
 @media (max-width: 1024px) {
   .embla {
-    --slides-per-view: 2;
+    --slides-per-view: 3;
   }
 }
 
 @media (max-width: 640px) {
   .embla {
-    --slides-per-view: 1;
+    --slides-per-view: 2;
     --arrow-gap: 40px;
   }
 }

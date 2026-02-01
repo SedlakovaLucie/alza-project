@@ -3,8 +3,10 @@
   --color-text: #000;
   --color-bg: #fff;
   --color-brand: #7fca50;
-  --star-empty: #d1d5db;
-  --star-fill: #FFD538;
+  --color-star-empty: #d1d5db;
+  --color-star-fill: #FFD538;
+  --color-bg-products: #EDEBEB;
+  --color-border-products: rgba(0, 0, 0, 0.2);
 
   /* Font sizes */
   --fs-1: 0.75rem; /* 12px */

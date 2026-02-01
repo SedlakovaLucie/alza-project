@@ -14,11 +14,11 @@
 }
 
 .stars__row--empty {
-  color: var(--star-empty);
+  color: var(--color-star-empty);
 }
 
 .stars__row--full {
-  color: var(--star-fill);
+  color: var(--color-star-fill);
 }
 
 .stars__fill {

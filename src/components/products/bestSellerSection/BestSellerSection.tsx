@@ -5,20 +5,20 @@ import useEmblaCarousel from "embla-carousel-react";
 import BestSellerCard from "./bestSellerCard/BestSellerCard";
 import type { Product } from "../../../types";
 
-type Props = { products: Product[] };
+type Props = { bestSellers: Product[] };
 
 const BREAKPOINTS = { mobile: 640, tablet: 1024 };
 
 const getSlidesPerView = (): number => {
-  if (typeof globalThis === "undefined") return 4; //default 4
+  if (typeof globalThis === "undefined") return 5; //default 5
   if (globalThis.matchMedia(`(max-width: ${BREAKPOINTS.mobile}px)`).matches)
-    return 1;
-  if (globalThis.matchMedia(`(max-width: ${BREAKPOINTS.tablet}px)`).matches)
     return 2;
-  return 4;
+  if (globalThis.matchMedia(`(max-width: ${BREAKPOINTS.tablet}px)`).matches)
+    return 3;
+  return 5;
 };
 
-const BestSellerSection = ({ products }: Props) => {
+const BestSellerSection = ({ bestSellers }: Props) => {
   const { t } = useTranslation();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
   const [slidesPerView, setSlidesPerView] = useState(() => getSlidesPerView());
@@ -71,9 +71,9 @@ const BestSellerSection = ({ products }: Props) => {
         {/* carousel */}
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
-            {products.map((product) => (
-              <div className="embla__slide" key={product.id}>
-                <BestSellerCard product={product} />
+            {bestSellers.map((bestProduct) => (
+              <div className="embla__slide" key={bestProduct.id}>
+                <BestSellerCard bestProduct={bestProduct} />
               </div>
             ))}
           </div>

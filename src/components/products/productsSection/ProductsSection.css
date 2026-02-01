@@ -1,0 +1,13 @@
+.productsSection{
+  margin-top: var(--fs-9);
+  padding: 20px;
+  background-color: var(--color-bg-products);
+  border-radius: var(--radius-card);
+}
+
+.productsGrid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(218px, 5fr));
+  align-items: stretch;
+}
