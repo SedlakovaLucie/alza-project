@@ -1,6 +1,15 @@
 .footer-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3);
+}
+
+.author-link {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.author-link:hover {
+  color: var(--color-brand);
 }

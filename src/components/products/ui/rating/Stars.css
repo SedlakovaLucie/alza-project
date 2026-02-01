@@ -1,0 +1,30 @@
+.starsWrapper {
+  display: inline-block;
+}
+
+.stars {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.stars__row {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.stars__row--empty {
+  color: var(--star-empty);
+}
+
+.stars__row--full {
+  color: var(--star-fill);
+}
+
+.stars__fill {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  width: var(--stars-fill);
+  white-space: nowrap;
+}

@@ -1,7 +1,7 @@
 import "./BestSellerSection.css";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import useEmblaCarousel from "embla-carousel-react";
-
 import BestSellerCard from "./bestSellerCard/BestSellerCard";
 import type { Product } from "../../../types";
 
@@ -19,6 +19,7 @@ const getSlidesPerView = (): number => {
 };
 
 const BestSellerSection = ({ products }: Props) => {
+  const { t } = useTranslation();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
   const [slidesPerView, setSlidesPerView] = useState(() => getSlidesPerView());
 
@@ -45,7 +46,7 @@ const BestSellerSection = ({ products }: Props) => {
 
   return (
     <section className="bestSeller-section">
-      <h1 className="bestSeller__title">Nejprodávanější</h1>
+      <h2 className="bestSeller__title">{t("bestSeller_section.title")}</h2>
 
       {/* arrow-left */}
       <div className="embla">

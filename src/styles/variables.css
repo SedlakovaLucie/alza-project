@@ -3,6 +3,8 @@
   --color-text: #000;
   --color-bg: #fff;
   --color-brand: #7fca50;
+  --star-empty: #d1d5db;
+  --star-fill: #FFD538;
 
   /* Font sizes */
   --fs-1: 0.75rem; /* 12px */
@@ -38,7 +40,6 @@
   --radius-card: 1rem;
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
-
 
 /* breakpointy Tailwind
 sm: 640px

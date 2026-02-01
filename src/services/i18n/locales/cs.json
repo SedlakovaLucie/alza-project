@@ -1,1 +1,9 @@
-{}
+{
+  "footer": {
+    "author": "Lucie Jagošová"
+  },
+  "currency": "Kč",
+  "bestSeller_section": {
+    "title": "Nejprodávanější"
+  }
+}
