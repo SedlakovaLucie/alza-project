@@ -5,7 +5,7 @@
   --color-brand: #7fca50;
   --color-star-empty: #d1d5db;
   --color-star-fill: #FFD538;
-  --color-bg-products: #EDEBEB;
+  --color-bg-products: #F5F5F5;
   --color-border-products: rgba(0, 0, 0, 0.2);
 
   /* Font sizes */
@@ -39,7 +39,7 @@
   --space-10: 4rem; /* 64px */
 
   /* cards */
-  --radius-card: 1rem;
+  --radius-card: 0.5rem;
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 

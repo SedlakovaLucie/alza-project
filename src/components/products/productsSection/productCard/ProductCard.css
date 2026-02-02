@@ -18,6 +18,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 2;
+  min-height: calc(2 * 1.2em);
 }
 
 /* specification */
@@ -61,23 +62,22 @@
 /* price + buyButton */
 .priceBox {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .productCard-price {
-  padding-top: 8px;
   font-weight: var(--fw-bold);
   color: var(--color-brand);
 }
 
-.buyBtn {
-  font-weight: var(--fw-bold);
-  background-color: var(--color-brand);
-  border-radius: var(--radius-card);
-  padding: 10px;
-}
-
-.available{
+.available {
   font-size: var(--fs-1);
+  font-weight: var(--fw-medium);
 }
 
+/* breakpoints */
+@media (max-width: 640px) {
+  .productCard-price {
+    font-size: var(--fs-3);
+  }}

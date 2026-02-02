@@ -12,7 +12,7 @@ const BREAKPOINTS = { mobile: 640, tablet: 1024 };
 const getSlidesPerView = (): number => {
   if (typeof globalThis === "undefined") return 5; //default 5
   if (globalThis.matchMedia(`(max-width: ${BREAKPOINTS.mobile}px)`).matches)
-    return 2;
+    return 1;
   if (globalThis.matchMedia(`(max-width: ${BREAKPOINTS.tablet}px)`).matches)
     return 3;
   return 5;

@@ -1,42 +1,34 @@
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./ProductsSection.css";
 import ProductCard from "./productCard/ProductCard";
 import type { Product } from "../../../types";
 
-type Props = {
-  allProducts: Product[];
-};
+type Props = { allProducts: Product[] };
 
-type TabKey = "TOP" | "BESTSELLER" | "CHEAPEST" | "EXPENSIVE";
+export const TABS = ["top", "bestseller", "cheapest", "expensive"] as const;
+export type TabKey = (typeof TABS)[number];
 
-// tabs
-const TABS: { key: TabKey; label: string }[] = [
-  { key: "TOP", label: "TOP" },
-  { key: "BESTSELLER", label: "Nejprodávanější" },
-  { key: "CHEAPEST", label: "Od nejlevnějšího" },
-  { key: "EXPENSIVE", label: "Od nejdražšího" },
-];
-
-//parse na number
 const parseNumber = (value: string) => {
   const numbers = value.replaceAll(/[^\d]/g, "");
   return numbers ? Number(numbers) : 0;
 };
 
 const ProductsSection = ({ allProducts }: Props) => {
-  const [activeTab, setActiveTab] = useState<TabKey>("TOP");
+  const { t } = useTranslation();
+  const [activeTab, setActiveTab] = useState<TabKey>("top");
 
   const visibleProducts = useMemo(() => {
     const copy = [...allProducts];
 
     switch (activeTab) {
-      case "TOP":
+      case "top":
         return copy.sort((a, b) => b.rating - a.rating);
-      case "BESTSELLER":
+      case "bestseller":
         return copy.sort((a, b) => a.order - b.order);
-      case "CHEAPEST":
+      case "cheapest":
         return copy.sort((a, b) => parseNumber(a.price) - parseNumber(b.price));
-      case "EXPENSIVE":
+      case "expensive":
         return copy.sort((a, b) => parseNumber(b.price) - parseNumber(a.price));
       default:
         return copy;
@@ -45,21 +37,19 @@ const ProductsSection = ({ allProducts }: Props) => {
 
   return (
     <section className="productsSection">
-      {/* TABS */}
       <div className="tabs">
-        {TABS.map((tab) => (
+        {TABS.map((key) => (
           <button
-            key={tab.key}
+            key={key}
             type="button"
-            className={tab.key === activeTab ? "tab active" : "tab"}
-            onClick={() => setActiveTab(tab.key)}
+            className={key === activeTab ? "tab active" : "tab"}
+            onClick={() => setActiveTab(key)}
           >
-            {tab.label}
+            {t(`productsSection.tabs.${key}`)}
           </button>
         ))}
       </div>
 
-      {/* PRODUCTS */}
       <div className="productsGrid">
         {visibleProducts.map((oneProduct) => (
           <ProductCard key={oneProduct.id} oneProduct={oneProduct} />

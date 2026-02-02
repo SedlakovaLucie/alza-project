@@ -6,5 +6,23 @@
   "rating": "Hodnocení",
   "bestSeller_section": {
     "title": "Nejprodávanější"
+  },
+  "bestSellerSection": {
+    "byutBtn": {
+      "aria": "Možnosti nákupu",
+      "buy": "Koupit",
+      "buy_fast": "Koupit zrychleně",
+      "compare": "Porovnat",
+      "watch": "Hlídat",
+      "add": "Přidat do seznamu"
+    }
+  },
+  "productsSection": {
+    "tabs": {
+      "top": "TOP",
+      "bestseller": "Nejprodávanější",
+      "cheapest": "Od nejlevnějšího",
+      "expensive": "Od nejdražšího"
+    }
   }
 }

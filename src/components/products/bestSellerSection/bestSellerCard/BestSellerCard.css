@@ -70,3 +70,9 @@
   font-weight: var(--fw-bold);
   color: var(--color-brand);
 }
+
+/* breakpoints */
+@media (max-width: 640px) {
+  .bestSellerCard-price {
+    font-size: var(--fs-3);
+  }}

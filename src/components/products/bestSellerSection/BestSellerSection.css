@@ -1,5 +1,6 @@
 .bestSellerCard-section {
   width: 100%;
+  padding: var(--space-3);
 }
 
 .bestSeller__title {
@@ -86,7 +87,7 @@
 
 @media (max-width: 640px) {
   .embla {
-    --slides-per-view: 2;
+    --slides-per-view: 1;
     --arrow-gap: 40px;
   }
 }
