@@ -1,0 +1,13 @@
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}

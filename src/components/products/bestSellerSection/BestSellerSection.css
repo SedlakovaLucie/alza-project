@@ -4,13 +4,13 @@
 }
 
 .bestSeller__title {
-  margin-bottom: var(--fs-3);
-  margin-left: var(--fs-9);
+  margin-bottom: var(--space-4);
+  margin-left: var(--space-3);
 }
 
 /* EMBLA library */
 .embla {
-  --slide-spacing: var(--fs-3);
+  --slide-spacing: var(--space-4);
   --slides-per-view: 5;
   --slide-size: calc(100% / var(--slides-per-view));
   --arrow-gap: 50px;
@@ -89,5 +89,9 @@
   .embla {
     --slides-per-view: 1;
     --arrow-gap: 40px;
+  }
+  .embla__button {
+    color: var(--color-brand);
+    background: none;
   }
 }

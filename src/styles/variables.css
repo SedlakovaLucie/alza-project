@@ -5,7 +5,7 @@
   --color-brand: #7fca50;
   --color-star-empty: #d1d5db;
   --color-star-fill: #FFD538;
-  --color-bg-products: #F5F5F5;
+  --color-bg-products: #F6F6F6;
   --color-border-products: rgba(0, 0, 0, 0.2);
 
   /* Font sizes */
@@ -43,9 +43,3 @@
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* breakpointy Tailwind
-sm: 640px
-md: 768px
-lg: 1024px
-xl: 1280px
-2xl: 1536px */

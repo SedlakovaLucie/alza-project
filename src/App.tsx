@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import ProducstListPage from "./pages/productsList/ProducstListPage";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 import Layout from "./layouts/Layout";
 
 const App = () => {

@@ -5,9 +5,9 @@ import navLogo from "../../../assets/images/alza-logo.svg";
 const Navbar = () => {
   return (
     <nav className="nav-wrapper">
-      <div >
+      <a href="#heroSection">
         <img src={navLogo} alt="logo" className="nav-logo"/>
-      </div>
+      </a>
       <div>
         <img src={avatarImage} alt="profil" className="avatar"/>
       </div>

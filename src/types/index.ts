@@ -14,5 +14,10 @@ export type Product = {
 };
 
 export type ProductsApiResponse = {
+  breadcrumbs: Array<{
+    category: {
+      name: string;
+    };
+  }>;
   data: Product[];
 };

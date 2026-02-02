@@ -5,7 +5,6 @@
 /* tabs */
 .tabs {
   display: flex;
-  gap: 1px;
 }
 
 .tab {
@@ -13,33 +12,29 @@
   color: var(--color-text);
   font-weight: var(--fw-semibold);
   padding: 10px;
-  border: 2px solid var(--color-border-products);
-  border-radius: 5px 5px 0px 0px;
-  transition: background-color 0.3s ease;
+  border: 1px solid var(--color-border-products);
+  border-left: none;
+  transition: border 0.3s ease;
 }
 
 .tab.active {
-  background-color: var(--color-brand);
+  border-top: 3px solid var(--color-brand);
+  border-bottom: none;
 }
 
 /* grid */
 .productsGrid {
   display: grid;
-  gap: 15px;
+  gap: 6px;
   grid-template-columns: repeat(auto-fit, minmax(218px, 5fr));
   align-items: stretch;
-  padding: 20px;
+  padding: 40px;
   background-color: var(--color-bg-products);
-  border-radius: var(--radius-card);
-  border-top-left-radius: 0px;
 }
 
 /* breakpoints */
 @media (max-width: 640px) {
   .tab {
     padding: 5px;
-  }
-  .productsGrid {
-    border-top-right-radius: 0px;
   }
 }

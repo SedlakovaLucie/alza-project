@@ -24,5 +24,10 @@
       "cheapest": "Od nejlevnějšího",
       "expensive": "Od nejdražšího"
     }
+  },
+  "errorPage": {
+    "title": "Error 404",
+    "message": "Tenhle kout webu je prázdný.",
+    "button": "Zpět na hlavní stránku"
   }
 }

@@ -4,7 +4,7 @@
   height: 100%;
   border: 2px solid var(--color-brand);
   border-radius: var(--radius-card);
-  padding: var(--fs-3);
+  padding: var(--space-4);
   gap: 10px;
 }
 
@@ -72,7 +72,7 @@
 }
 
 /* breakpoints */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .bestSellerCard-price {
     font-size: var(--fs-3);
   }}

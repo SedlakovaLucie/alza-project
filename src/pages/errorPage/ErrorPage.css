@@ -1,0 +1,41 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 10px;
+}
+
+.error-mark {
+  font-size: 6rem;
+  color: var(--color-brand);
+  animation: mark-animation 1.5s ease-in-out infinite;
+}
+
+.errorPage-button {
+    padding: 10px 20px;
+    background-color: var(--color-brand);
+    color: var(--color-bg);
+    font-weight: var(--fw-semibold);
+    border-radius: var(--radius-card);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.errorPage-button:hover {
+    filter: brightness(0.95);
+}
+
+/* mark animation */
+@keyframes mark-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
