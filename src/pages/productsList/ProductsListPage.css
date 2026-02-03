@@ -1,0 +1,29 @@
+.loadingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.loader-icon {
+  width: 50px;
+  animation: spinning 1s linear infinite;
+}
+
+.errorSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: var(--fs-5);
+}
+
+/* animation */
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

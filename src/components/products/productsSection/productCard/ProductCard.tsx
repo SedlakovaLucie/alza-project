@@ -22,6 +22,7 @@ const ProductCard = ({ oneProduct }: Props) => {
         {/* rating */}
         <div className="productCard-rating">
           <Stars value={rating} />
+          {rating}
         </div>
       </div>
 

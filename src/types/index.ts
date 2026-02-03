@@ -15,9 +15,9 @@ export type Product = {
 
 export type ProductsApiResponse = {
   breadcrumbs: Array<{
-    category: {
-      name: string;
-    };
+    category: { name: string };
   }>;
   data: Product[];
+  total?: number;
+  has_next?: boolean;
 };

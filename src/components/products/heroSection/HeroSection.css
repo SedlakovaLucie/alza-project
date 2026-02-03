@@ -5,6 +5,10 @@
   padding: 50px 0px;
 }
 
+#heroSection {
+  scroll-margin-top: 80px; /* výška sticky navbaru */
+}
+
 @media (max-width: 768px) {
   .heroSection {
     padding-top: 20px;

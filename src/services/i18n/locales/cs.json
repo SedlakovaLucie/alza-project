@@ -29,5 +29,9 @@
     "title": "Error 404",
     "message": "Tenhle kout webu je prázdný.",
     "button": "Zpět na hlavní stránku"
+  },
+  "productListPage": {
+    "loading": "Načítání produktů",
+    "error": "Nepodařilo se načíst produkty. Zkuste to prosím znovu."
   }
 }
